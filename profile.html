@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/index.css" />
+<link rel="stylesheet" href="/css/profile.css" />
+</head>
+<body>
+
+<!-- ── Header ── -->
+<header class="site-header">
+  <div class="header-left">
+    <img src="/logo.png" alt="Logo" class="logo">
+    <h1 class="site-title">StudyPlan</h1>
+  </div>
+  <nav class="header-nav">
+    <a href="index.html">Dashboard</a>
+    <a href="#">Tasks</a>
+    <a href="#">Calendar</a>
+    <a href="#" id="nav-settings">Settings</a>
+  </nav>
+  <div class="header-right">
+    <button class="profile-btn" onclick="window.location.href='/profile.html'">Profile</button>
+  </div>
+</header>
+
+<!-- ── Page ── -->
+<div class="wrapper">
+  <div class="profile-container">
+
+  <!-- Profile Header -->
+  <div class="glass profile-header fade-up">
+    <div class="avatar-wrap">
+      <div class="avatar-ring"></div>
+      <div class="avatar">PS</div>
+      <div class="status-dot"></div>
+    </div>
+    <div class="header-info">
+      <div class="header-top">
+        <div>
+          <h1 class="student-name">Priya <span>Sharma</span></h1>
+          <p class="student-meta">
+            B.Tech Computer Science
+            <span class="sep">·</span>
+            3rd Year — Semester VI
+            <span class="sep">·</span>
+            MIT Pune
+          </p>
+        </div>
+        <button class="edit-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Edit Profile
+        </button>
+      </div>
+      <div class="badges">
+        <span class="badge badge-purple">🎓 Active Learner</span>
+        <span class="badge badge-teal">⚡ Streak 14d</span>
+        <span class="badge badge-amber">🏆 Top 10%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Row -->
+  <div class="stats-row fade-up delay-1">
+    <div class="glass stat-card">
+      <div class="stat-value purple">47</div>
+      <div class="stat-label">Tasks Completed</div>
+    </div>
+    <div class="glass stat-card">
+      <div class="stat-value teal">8.6</div>
+      <div class="stat-label">Avg. CGPA</div>
+    </div>
+    <div class="glass stat-card">
+      <div class="stat-value amber">14</div>
+      <div class="stat-label">Day Streak</div>
+    </div>
+    <div class="glass stat-card">
+      <div class="stat-value rose">3</div>
+      <div class="stat-label">Pending Tasks</div>
+    </div>
+  </div>
+
+  <!-- Main Grid -->
+  <div class="main-grid">
+
+    <!-- Personal Information -->
+    <div class="glass section-card fade-up delay-2">
+      <div class="section-title">Personal Information</div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Full Name
+        </div>
+        <div class="info-val">Priya Sharma</div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Date of Birth
+        </div>
+        <div class="info-val mono">12 Mar 2003</div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </div>
+        <div class="info-val accent mono">priya.sharma@mit.edu</div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16l.19.92z"/></svg>
+          Phone
+        </div>
+        <div class="info-val mono">+91 98765 43210</div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Location
+        </div>
+        <div class="info-val">Pune, Maharashtra</div>
+      </div>
+    </div>
+
+    <!-- Academic Information -->
+    <div class="glass section-card fade-up delay-2">
+      <div class="section-title">Academic Details</div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          University
+        </div>
+        <div class="info-val">MIT Pune</div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          Program
+        </div>
+        <div class="info-val">B.Tech — CSE</div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          Semester
+        </div>
+        <div class="info-val">Semester VI (3rd Year)</div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          Roll Number
+        </div>
+        <div class="info-val mono accent">2021BCSE0047</div>
+      </div>
+      <div class="info-row">
+        <div class="info-key">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          Current CGPA
+        </div>
+        <div class="info-val teal">8.62 / 10</div>
+      </div>
+    </div>
+
+    <!-- Enrolled Subjects -->
+    <div class="glass section-card fade-up delay-3">
+      <div class="section-title">Enrolled Subjects</div>
+      <div class="subjects-grid">
+        <span class="subject-tag">Data Structures</span>
+        <span class="subject-tag t2">DBMS</span>
+        <span class="subject-tag t3">Machine Learning</span>
+        <span class="subject-tag">OS Concepts</span>
+        <span class="subject-tag t2">Computer Networks</span>
+        <span class="subject-tag t3">Software Engg.</span>
+        <span class="subject-tag">Theory of Computation</span>
+        <span class="subject-tag t2">Web Dev</span>
+      </div>
+    </div>
+
+    <!-- Subject Performance -->
+    <div class="glass section-card fade-up delay-3">
+      <div class="section-title">Subject Performance</div>
+      <div class="prog-item">
+        <div class="prog-top"><span class="prog-label">Data Structures</span><span class="prog-pct">88%</span></div>
+        <div class="prog-track"><div class="prog-fill pf-purple" style="width:88%"></div></div>
+      </div>
+      <div class="prog-item">
+        <div class="prog-top"><span class="prog-label">Machine Learning</span><span class="prog-pct">74%</span></div>
+        <div class="prog-track"><div class="prog-fill pf-teal" style="width:74%"></div></div>
+      </div>
+      <div class="prog-item">
+        <div class="prog-top"><span class="prog-label">DBMS</span><span class="prog-pct">91%</span></div>
+        <div class="prog-track"><div class="prog-fill pf-amber" style="width:91%"></div></div>
+      </div>
+      <div class="prog-item">
+        <div class="prog-top"><span class="prog-label">Computer Networks</span><span class="prog-pct">63%</span></div>
+        <div class="prog-track"><div class="prog-fill pf-rose" style="width:63%"></div></div>
+      </div>
+    </div>
+
+    <!-- Activity Heatmap -->
+    <div class="glass section-card full-col fade-up delay-4">
+      <div class="section-title">Activity Heatmap — Last 16 Weeks</div>
+      <div class="heatmap-wrap" id="heatmap"></div>
+    </div>
+
+    <!-- Recent Tasks -->
+    <div class="glass section-card fade-up delay-4">
+      <div class="section-title">Recent Tasks</div>
+      <div class="task-item">
+        <div class="task-dot td-done"></div>
+        <div>
+          <div class="task-text">ML Assignment 3 — Regression Models</div>
+          <div class="task-sub">Machine Learning</div>
+        </div>
+        <div class="task-due">May 12</div>
+      </div>
+      <div class="task-item">
+        <div class="task-dot td-done"></div>
+        <div>
+          <div class="task-text">DBMS Lab Report — ER Diagrams</div>
+          <div class="task-sub">DBMS</div>
+        </div>
+        <div class="task-due">May 10</div>
+      </div>
+      <div class="task-item">
+        <div class="task-dot td-pending"></div>
+        <div>
+          <div class="task-text">DSA Mid-term Revision</div>
+          <div class="task-sub">Data Structures</div>
+        </div>
+        <div class="task-due">May 18</div>
+      </div>
+      <div class="task-item">
+        <div class="task-dot td-pending"></div>
+        <div>
+          <div class="task-text">Networks Chapter 5 Notes</div>
+          <div class="task-sub">Computer Networks</div>
+        </div>
+        <div class="task-due">May 20</div>
+      </div>
+      <div class="task-item">
+        <div class="task-dot td-late"></div>
+        <div>
+          <div class="task-text">OS Assignment — Scheduling</div>
+          <div class="task-sub">OS Concepts</div>
+        </div>
+        <div class="task-due">May 8 ⚠</div>
+      </div>
+    </div>
+
+    <!-- Upcoming Deadlines -->
+    <div class="glass section-card fade-up delay-4">
+      <div class="section-title">Upcoming Deadlines</div>
+      <div class="upcoming-item">
+        <div class="date-chip"><div class="dd">18</div><div class="mm">May</div></div>
+        <div class="upcoming-info">
+          <div class="upcoming-title">DSA Mid-term Exam</div>
+          <div class="upcoming-sub">Data Structures — Hall B</div>
+        </div>
+        <span class="urgency u-high">High</span>
+      </div>
+      <div class="upcoming-item">
+        <div class="date-chip"><div class="dd">22</div><div class="mm">May</div></div>
+        <div class="upcoming-info">
+          <div class="upcoming-title">ML Project Submission</div>
+          <div class="upcoming-sub">Machine Learning — Online</div>
+        </div>
+        <span class="urgency u-high">High</span>
+      </div>
+      <div class="upcoming-item">
+        <div class="date-chip"><div class="dd">28</div><div class="mm">May</div></div>
+        <div class="upcoming-info">
+          <div class="upcoming-title">DBMS Practical Exam</div>
+          <div class="upcoming-sub">Lab 3 — Building A</div>
+        </div>
+        <span class="urgency u-med">Medium</span>
+      </div>
+      <div class="upcoming-item">
+        <div class="date-chip"><div class="dd">05</div><div class="mm">Jun</div></div>
+        <div class="upcoming-info">
+          <div class="upcoming-title">Networks Assignment</div>
+          <div class="upcoming-sub">Computer Networks — Submit online</div>
+        </div>
+        <span class="urgency u-low">Low</span>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <div class="glass section-card full-col fade-up delay-5">
+      <div class="section-title">Achievements</div>
+      <div class="achievements-grid">
+        <div class="achievement">
+          <div class="ach-icon">🔥</div>
+          <div class="ach-name">14-Day Streak</div>
+          <div class="ach-date">Active</div>
+        </div>
+        <div class="achievement">
+          <div class="ach-icon">⚡</div>
+          <div class="ach-name">Early Bird</div>
+          <div class="ach-date">May 01 2025</div>
+        </div>
+        <div class="achievement">
+          <div class="ach-icon">🎯</div>
+          <div class="ach-name">Goal Setter</div>
+          <div class="ach-date">Apr 15 2025</div>
+        </div>
+        <div class="achievement">
+          <div class="ach-icon">🏆</div>
+          <div class="ach-name">Top Performer</div>
+          <div class="ach-date">Mar 30 2025</div>
+        </div>
+        <div class="achievement locked">
+          <div class="ach-icon">🌙</div>
+          <div class="ach-name">Night Owl</div>
+          <div class="ach-date">Locked</div>
+        </div>
+        <div class="achievement locked">
+          <div class="ach-icon">🚀</div>
+          <div class="ach-name">30-Day Sprint</div>
+          <div class="ach-date">Locked</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bio -->
+    <div class="glass section-card full-col fade-up delay-6">
+      <div class="section-title">About</div>
+      <p class="bio-text">
+        Final-year Computer Science student passionate about AI/ML and full-stack development.
+        Currently exploring deep learning for computer vision projects and contributing to open-source.
+        Using StudyPlan to stay on top of deadlines across 8 active subjects without losing my mind. ☕
+      </p>
+    </div>
+
+  </div><!-- /main-grid -->
+  </div><!-- /profile-container -->
+</div><!-- /wrapper -->
+
+<script src="/js/profile.js"></script>
+</body>
+</html>
